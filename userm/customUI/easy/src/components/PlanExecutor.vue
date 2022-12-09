@@ -13,7 +13,7 @@
             <v-flex xs12 text-center>
                <h4>Permissões</h4>
             </v-flex>
-            <v-layout row  v-for="perm in perms" v-bind:key="perm.name">
+            <div style="display:flex" row  v-for="perm in perms" v-bind:key="perm.name">
                <v-flex xs3 text-right :class="'state-' + perm.state">
                   {{ perm.state }}
                   <span v-if="perm.state === 'existing'">
@@ -24,7 +24,7 @@
                <v-flex xs12 text-left>
                   <code>{{ perm.name }}</code>
                </v-flex>
-            </v-layout>
+            </div>
          </v-layout>
       </v-flex>
 
