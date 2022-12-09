@@ -2,7 +2,7 @@ export default [
    {
       name: "Perms base acesso ao RM",
       vars: [
-         { name: "MSG" , type: "simple"   , value: "mensagem para acrescentar na descrição"}
+         { name: "MSG" , type: "simple"   , value: ""}
       ],
       productPerms: [
          {
@@ -48,7 +48,7 @@ export default [
       name: "Perms base Definição RM",
       vars: [
          { name: "DEF"  , type: "RM-DEF", value: {}},
-         { name: "MSG" , type: "simple"   , value: "mensagem para acrescentar na descrição"}
+         { name: "MSG" , type: "simple"   , value: ""}
       ],
       productPerms: [
          {
@@ -85,7 +85,7 @@ export default [
       name: "Perms base Definição RM com delete separado",
       vars: [
          { name: "DEF"  , type: "RM-DEF", value: ""},
-         { name: "MSG" , type: "simple"   , value: "mensagem para acrescentar na descrição"}
+         { name: "MSG" , type: "simple"   , value: ""}
       ],
       productPerms: [
          {
@@ -168,7 +168,7 @@ export default [
       vars: [
          { name: "ID", type: "RM-DOMAIN-ID", value: ""},
          { name: "NAME", type: "simple", value: "nome do dominio"},
-         { name: "MSG", type: "simple", value: "mensagem para acrescentar na descrição"}
+         { name: "MSG", type: "simple", value: ""}
       ],
       productPerms: [
          {
