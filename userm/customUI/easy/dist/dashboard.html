@@ -1,13 +1,17 @@
+      
 
-<link href="localresource/easy/dist/css/app.a4fb91f8.css" rel="stylesheet">
+      <link href="localresource/easy/dist/css/app.724399b4.css" rel="stylesheet">
 
 
-<div id="userm-easy"></div>
+      <link href="localresource/easy/dist/js/app.e1d07a2d.js" rel="preload" as="script">
 
-<script>
-	cob.utils.afterDeps([ 'Vue', 'Vuetify', 'axios', 'marked' ], function() {
-		
-		cob.utils.loadScript('localresource/easy/dist/js/app.63a57dcd.js');
-		
-	})
-</script>
+
+      <div id="app"></div>
+      <script>
+            // mimes: .cob-app tem estilos globais que se aplicam a elementos vuetify que mudam o aspecto previsto
+            let section = document.getElementsByClassName("custom-resource")[0];
+            section && section.classList.remove("cob-app"); //TODO: validar que isto é a melhor opção (considerar remover class na ui-all)
+      </script>
+
+      <script type="text/javascript" src="localresource/easy/dist/js/app.e1d07a2d.js"></script>
+

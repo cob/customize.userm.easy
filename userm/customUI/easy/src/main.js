@@ -1,19 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Vuetify from 'vuetify'
-import Components from '@cob/ui-vue-components'
+import vuetify from './plugins/vuetify';
+import cobUiVueComponents from './plugins/cobUiVueComponents';
 
 Vue.config.productionTip = false
-Vue.config.devtools = true
-
-Vue.use(Vuetify, {
-  iconfont: 'md',
-})
-
-Object.keys(Components).forEach(name => {
-  Vue.component(name, Components[name]);
-});
 
 new Vue({
-  render: h => h(App),
-}).$mount('#userm-easy')
+  vuetify,
+  cobUiVueComponents,
+  render: function (h) { return h(App) }
+}).$mount('#app')
